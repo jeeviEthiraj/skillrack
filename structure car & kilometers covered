@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct Car
+{
+    char name[50];
+    char maufacturer[50];
+    float mileage;
+    int kmsCovered;
+};
+int main()
+{ 
+int N; 
+scanf("%d\n",&N); 
+struct Car cars[N]; 
+for(int index=0; index < N; index++)
+{
+scanf("%s%s%lf%d",cars[index].name,cars[index].manufacturer,&cars[index].mileage,&cars[index].kmsCovered);
+}
+for(int index=0; index < N; index++)
+{ 
+printf("%s has run %d kms\n",cars[index].name,cars[index].kmsCovered);
+} 
+return 0;
+}
