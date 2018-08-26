@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include <stdlib.h>
+int main()
+{
+char str[1000];
+scanf("%s",s);
+int x,i,count=0;
+x=strlen(str);
+for(i=0;i<x;i++)
+{
+    if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'||str[i]=='A'||str[i]=='E'||str[i]=='O'||str[i]=='U'||str[i]=='I')
+    {
+        if(str[i+1]=='a'||str[i+1]=='e'||str[i+1]=='i'||str[i+1]=='o'||str[i+1]=='u'||str[i+1]=='A'||str[i+1]=='E'||str[i+1]=='I'||str[i+1]=='O'||str[i+1]=='U')
+        {
+            count++;
+        }
+    }
+}
+printf("%d",count);
+
+}
